@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blood Circle</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Custom CSS -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .jumbotron {
+        background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190619/ourmid/pngtree-geometric-gradient-creative-blood-donation-poster-background-material-image_134137.jpg");
+        background-size: cover;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+        padding: 100px 20px;
+      }
+      .search-form {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .card {
+        margin-bottom: 30px;
+      }
+      .footer {
+        background-color: #343a40;
+        color: white;
+        padding: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Blood Donors</a>
+      </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron text-center">
+      <h1 class="display-4">Find Blood Group Donors</h1>
+      <p class="lead">Connect with people willing to donate blood</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <form class="search-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter blood group"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Donors Section -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">John Doe</h5>
+              <p class="card-text">Blood Group: A+</p>
+              <p class="card-text">Contact: 123-456-7890</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Jane Smith</h5>
+              <p class="card-text">Blood Group: O-</p>
+              <p class="card-text">Contact: 987-654-3210</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">David Johnson</h5>
+              <p class="card-text">Blood Group: B+</p>
+              <p class="card-text">Contact: 567-890-1234</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center footer">
+      <div class="container">
+        <p>&copy; 2024 Blood Donors</p>
+      </div>
+    </footer>
+  </body>
+</html>

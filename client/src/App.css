@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.jumbotron {
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190619/ourmid/pngtree-geometric-gradient-creative-blood-donation-poster-background-material-image_134137.jpg");
+  background-size: cover;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  padding: 100px 20px;
+}
+.search-form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+.card {
+  margin-bottom: 30px;
+}
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+}
