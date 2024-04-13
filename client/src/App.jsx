@@ -3,6 +3,8 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
+import user_image from "./assets/user_avatar.png";
+
 function App() {
   return (
     <>
@@ -17,20 +19,21 @@ function App() {
         </nav>
         {/* Jumbotron */}
         <div className="jumbotron text-center">
-          <h1 className="display-4">Find Blood Group Donors</h1>
-          <p className="lead">Connect with people willing to donate blood</p>
+          <div className="welcome_text">
+            <h1 className="display-4">Find Blood Group Donors</h1>
+            <p className="lead">Connect with people willing to donate blood</p>
+          </div>
           <div className="container">
             <div className="row">
               <div className="col-md-8 offset-md-2">
-                <form className="search-form">
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Enter blood group"
-                    />
-                  </div>
-                  <button type="submit" className="btn btn-primary btn-block">
+                <form className="d-flex" role="search">
+                  <input
+                    className="form-control me-2"
+                    type="search"
+                    placeholder="Search Blood Group"
+                    aria-label="Search"
+                  />
+                  <button className="btn btn-primary" type="submit">
                     Search
                   </button>
                 </form>
@@ -44,6 +47,7 @@ function App() {
             <div className="col-md-4">
               <div className="card">
                 <div className="card-body">
+                  <img src={user_image} alt="" className="user_image" />
                   <h5 className="card-title">John Doe</h5>
                   <p className="card-text">Blood Group: A+</p>
                   <p className="card-text">Contact: 123-456-7890</p>
@@ -53,6 +57,7 @@ function App() {
             <div className="col-md-4">
               <div className="card">
                 <div className="card-body">
+                  <img src={user_image} alt="" className="user_image" />
                   <h5 className="card-title">Jane Smith</h5>
                   <p className="card-text">Blood Group: O-</p>
                   <p className="card-text">Contact: 987-654-3210</p>
@@ -62,6 +67,7 @@ function App() {
             <div className="col-md-4">
               <div className="card">
                 <div className="card-body">
+                  <img src={user_image} alt="" className="user_image" />
                   <h5 className="card-title">David Johnson</h5>
                   <p className="card-text">Blood Group: B+</p>
                   <p className="card-text">Contact: 567-890-1234</p>
